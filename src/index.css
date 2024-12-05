@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}
+@media (max-width: 650px) {
+  .my-class {
+    gap: 2px; 
+    margin-left: 0px; 
+    top: 1580px;
+  }
+}
+@media (max-width: 650px) {
+  .super-quality-phone {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .super-quality-phone h2 {
+    font-size: 36px;
+    line-height: 48px;
+    width: 100%;
+  }
+
+  .super-quality-phone p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .super-quality-phone button {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .super-quality-phone img {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 650px) {
+  .service-card-phone {
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+    transition: none; /* Disable hover effect for phones */
+  }
+
+  .service-card-phone h3 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .service-card-phone p {
+    font-size: 1rem; /* Adjust paragraph size */
+    line-height: 1.5rem;
+  }
+
+  .service-card-phone div {
+    margin-left: auto;
+    margin-right: auto; /* Center the icon */
+  }
+}
+
+/* For small devices */
+@media (max-width: 768px) {
+  .modal-container {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .modal-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-details p {
+    font-size: 0.9rem;
+  }
+
+  .modal-price {
+    font-size: 1rem;
+  }
+
+  .modal-arrow {
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+  }
+
+}
+@media (max-width: 768px) {
+  .popularissmall{
+    text-align: center;
+    align-items: center;
+  }
+  .smallitemshoe{
+    margin-left: 40px;
+    gap: 50px;
+  }
+  /* Modal container */
+  .labelofshoe {
+    background-color: rgb(rgba(255, 255, 255, 0));
+    max-width: 450px;
+    height: 500px;
+    padding: 0 1rem; /* Padding inside the modal */
+  }
+
+  /* Image styling inside the modal */
+  .imageofshoe {
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    margin-top: -100px;
+    margin-left: -50px;
+  }
+
+ .arrowofshoe1 {
+  margin-top: 160px;
+ }
+.arrowofshoe2{
+  margin-top: 160px;
+  margin-left: -60px;
+ 
+}
+  /* Button inside modal */
+  .buttonofshoe {
+    padding: 0.75rem 2rem; /* Adjust button padding for smaller screens */
+  }
+
+}
+@media (max-width: 768px) {
+  /* Container for the Subscribe section */
+  #Contact-us {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 3rem; /* Add spacing between elements */
+    margin-top: -50px; /* Adjust top margin */
+  }
+  .h3subscribe {
+    text-align: center;
+    font-size: 40px; 
+    max-width: 400px;
+    margin-bottom: -100px;
+  }
+}
